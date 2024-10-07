@@ -50,7 +50,7 @@ Pour exécuter ce projet en local, vous aurez besoin de :
 
 Les maquettes de l'application sont disponibles sur **Figma**. Elles illustrent le flux de navigation et le design de l'interface utilisateur (UI) :
 
-- Lien vers les maquettes Figma
+- [Lien vers les maquettes Figma](#)
 
 ## 🗓️ Gestion du Projet
 
@@ -70,6 +70,6 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 
 Pour toute question ou suggestion, n'hésitez pas à nous contacter :
 
-- **Email**
+- **Email** : [rose-care@yopmail.com](mailto:rose-care@yopmail.com)
 
 Merci de votre soutien et de votre intérêt pour **Rose Care** !
