@@ -50,7 +50,7 @@ Pour exécuter ce projet en local, vous aurez besoin de :
 
 Les maquettes de l'application sont disponibles sur **Figma**. Elles illustrent le flux de navigation et le design de l'interface utilisateur (UI) :
 
-- [Lien vers les maquettes Figma](#)
+- [Lien vers les maquettes Figma](https://www.figma.com/design/ikAkRkQeDXZpSXEPD6wA9D/RoseCare?node-id=0-1&t=W1eL7PTNj2MZDXFU-1)
 
 ## 🗓️ Gestion du Projet
 

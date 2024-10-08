@@ -1,0 +1,25 @@
+/* Fichier : src/styles/Onboarding.css */
+.onboarding-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #feebf0; /* Couleur de fond plus claire */
+}
+
+.onboarding-slide {
+    text-align: center;
+    padding: 20px;
+}
+
+.onboarding-logo, .onboarding-image {
+    max-width: 60%;
+    margin: 20px auto;
+}
+
+.onboarding-text {
+    font-size: 18px;
+    color: #514b4b; /* Gris foncé */
+    margin: 20px 0;
+}
+
