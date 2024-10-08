@@ -1,0 +1,21 @@
+:root {
+    --bs-primary: #fabbcc; 
+    --bs-secondary: #514b4b;
+    --bs-danger: #cc3a01;
+    --bs-body-bg: #f9f9f9; 
+    --bs-body-color: #514b4b;
+}
+
+.gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.custom-button {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-body-color) !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    border: none !important;
+}

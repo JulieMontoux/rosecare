@@ -1,0 +1,73 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    background: none;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacement entre les champs */
+}
+
+.flex-item {
+    width: 48%;
+}
+
+.input-icon img {
+    width: 16px; /* Taille de l'icône ajustée pour correspondre à la maquette */
+    height: 16px;
+}
+
+.page-indicator {
+    display: flex !important;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.page-indicator span {
+    width: 30px; /* Taille ajustée pour correspondre à la maquette */
+    height: 30px;
+    border-radius: 50%;
+    background-color:#FEEBF0 ;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #514b4b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.page-indicator .active {
+    background-color: #FBBBCD;
+    width: 50px; 
+    height: 50px;
+}
+
+.custom-button {
+    background-color: #fabbcc !important;
+    color: #514b4b !important;
+    border: none;
+    width: 100%;
+    padding: 12px; /* Taille de bouton ajustée pour meilleure visibilité */
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.custom-button:disabled {
+    background-color: #e0e0e0; /* Couleur grise pour les boutons désactivés */
+    color: #888;
+}
