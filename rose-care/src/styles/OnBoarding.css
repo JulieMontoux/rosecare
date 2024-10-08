@@ -1,25 +1,73 @@
-/* Fichier : src/styles/Onboarding.css */
 .onboarding-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #feebf0; /* Couleur de fond plus claire */
+    background-color: #ffeef2; /* Fond clair */
+    position: relative;
+}
+
+.skip-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+}
+
+.skip-button button {
+    color: #cc3a01; /* Orange brûlé */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1rem !important;
+}
+
+.carousel-indicators button {
+    background-color: #ffffff !important; /* Couleur de base pour les points inactifs */
+    border-radius: 50% !important;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.carousel-indicators .active {
+    background-color: #cc3a01 !important; /* Couleur orange pour le point actif */
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
 }
 
 .onboarding-slide {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.onboarding-logo, .onboarding-image {
-    max-width: 60%;
-    margin: 20px auto;
+.onboarding-image {
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 .onboarding-text {
-    font-size: 18px;
     color: #514b4b; /* Gris foncé */
-    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+.custom-button {
+    background-color: #fabbcc !important; /* Rose pâle */
+    color: #514b4b !important; /* Gris foncé */
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: none;
+}

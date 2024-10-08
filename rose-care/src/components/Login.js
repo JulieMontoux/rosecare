@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Form, Button, InputGroup } from 'react-bootstrap';
 import '../styles/Login.css';
 
-function Login() {
+function Login({ goToAccountRecovery, goToSignup }) {
     return (
         <Container className="login-container">
             <div className="login-logo">
@@ -29,26 +29,22 @@ function Login() {
                         </InputGroup.Text>
                     </InputGroup>
                     <Form.Text className="forgot-password">
-                        <a href="#">Mot de passe oublié</a>
+                        <a href="#" onClick={goToAccountRecovery}>Mot de passe oublié</a>
                     </Form.Text>
                 </Form.Group>
 
                 <Button className="custom-button mt-4" type="submit">
                     Se connecter
                 </Button>
-            </Form>
 
-            <div className="login-footer">
-                <p>C'est ma première fois <a href="#" className="signup-link">je m'inscris !</a></p>
-                <div className="social-buttons">
-                    <Button variant="outline-secondary" className="social-button">
-                        <img src='/images/google-icon.png' alt='Google icon'/>
-                    </Button>
-                    <Button variant="outline-secondary" className="social-button">                        
-                        <img src='/images/facebook-icon.png' alt='facebook icon'/>
-                    </Button>
+                <div className="login-footer">
+                    <p>C'est ma première fois <a href="#" className="signup-link" onClick={goToSignup}>je m'inscris !</a></p>
+                    <div className="social-buttons">
+                        <Button variant="outline-secondary" className="social-button">G</Button>
+                        <Button variant="outline-secondary" className="social-button">f</Button>
+                    </div>
                 </div>
-            </div>
+            </Form>
         </Container>
     );
 }

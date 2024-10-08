@@ -1,0 +1,70 @@
+.recovery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    background-color: #ffffff; /* Fond blanc pour correspondre à la maquette */
+}
+
+.input-label{
+    background-color: #feebf0 !important;
+    border: none !important;
+}
+
+.recovery-title {
+    font-size: 24px;
+    color: #514b4b; /* Gris foncé pour le titre */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recovery-form {
+    width: 100%;
+    max-width: 350px;
+}
+
+.code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.code-input {
+    width: 40px;
+    height: 40px;
+    background-color: #fabbcc; /* Rose pâle */
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    color: #514b4b;
+}
+
+.validation-text {
+    color: #514b4b;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.custom-button {
+    background-color: #fabbcc !important;
+    color: #514b4b !important;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.back-to-login a {
+    color: #cc3a01; /* Orange pour retour à la connexion */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
