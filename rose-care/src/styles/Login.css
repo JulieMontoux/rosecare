@@ -17,6 +17,7 @@
     background: none; 
     padding: 0; 
     border-radius: 8px;
+    display: grid;
 }
 
 .input-icon {
@@ -52,10 +53,14 @@
 }
 
 .custom-button {
+    display: flex !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
     background-color: #fabbcc !important; 
     color: #514b4b !important; 
     border: none;
-    width: 100%;
+    width: 100%; 
+    max-width: 350px; 
     padding: 10px;
     border-radius: 8px;
     font-weight: bold;
@@ -101,6 +106,6 @@
 
 .social-button img{
     width: 35px;
-    height:35px;
+    height: 35px;
     margin: 0;
 }

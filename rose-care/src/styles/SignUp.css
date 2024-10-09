@@ -12,12 +12,27 @@
     max-width: 400px;
     background: none;
     padding: 20px;
+    display: grid;
 }
 
 .form-row {
     display: flex;
     justify-content: space-between;
     gap: 10px; /* Espacement entre les champs */
+}
+
+.form-row-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tel{
+    width: 100px;
+}
+
+.num{
+    width: 250px;
 }
 
 .flex-item {
@@ -70,4 +85,46 @@
 .custom-button:disabled {
     background-color: #e0e0e0; /* Couleur grise pour les boutons désactivés */
     color: #888;
+}
+
+/* Fichier : src/styles/SignUp.css */
+.signup-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+}
+
+.success-text {
+    color: #514b4b; /* Gris foncé */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-button {
+    background-color: #fabbcc !important; /* Rose pâle */
+    color: #514b4b !important; /* Gris foncé */
+    border: none;
+    width: 200px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.input-field {
+    background-color: #FEEBF0 !important;
+    border: none !important;
+    box-shadow: none;
+    color: #514b4b; 
+    border-radius: 8px; 
+    height: 45px; 
 }

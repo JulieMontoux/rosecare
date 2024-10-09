@@ -1,0 +1,75 @@
+.home-container {
+    background-color: #FEEBF0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.profile-section {
+    text-align: center;
+    background-color: #fabbcc;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.profile-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.search-form .input-icon {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    text-align: center;
+}
+
+.search-button {
+    background-color: #514b4b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.welcome-message {
+    background-color: #fabbcc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.rose-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.quick-actions .custom-button {
+    background-color: #fabbcc;
+    color: #514b4b;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.bottom-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #514b4b;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nav-icon {
+    color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+.nav-icon.active {
+    color: #fabbcc;
+}

@@ -2,7 +2,11 @@ import React from 'react';
 import { Container, Form, Button, InputGroup } from 'react-bootstrap';
 import '../styles/Login.css';
 
-function Login({ goToAccountRecovery, goToSignup }) {
+function Login({ goToAccountRecovery, goToSignup, goToHome }) {
+    const handleLogin = () => {
+        goToHome();
+    };
+
     return (
         <Container className="login-container">
             <div className="login-logo">
@@ -33,12 +37,12 @@ function Login({ goToAccountRecovery, goToSignup }) {
                     </Form.Text>
                 </Form.Group>
 
-                <Button className="custom-button mt-4" type="submit">
+                <Button className="custom-button" type="button" onClick={handleLogin}>
                     Se connecter
                 </Button>
 
                 <div className="login-footer">
-                    <p>C'est ma première fois <a href="#" className="signup-link" onClick={goToSignup}>je m'inscris !</a></p>
+                    <p>C'est ma première fois, <a href="#" className="signup-link" onClick={goToSignup}>je m'inscris !</a></p>
                     <div className="social-buttons">
                         <Button variant="outline-secondary" className="social-button">G</Button>
                         <Button variant="outline-secondary" className="social-button">f</Button>
