@@ -6,36 +6,42 @@ function Home() {
     return (
         <Container className="home-container">
             <div className="profile-section">
-                <img src="/images/user-icon.png" alt="Profile Icon" className="profile-icon" />
-                <h2>Bonjour Céline</h2>
+                <div className="profile-bubble">
+                    <img src="/images/user-icon.png" alt="Profile Icon" className="profile-icon" />
+                </div>
+                <h2 className="profile-name">Bonjour Céline</h2>
             </div>
+
             <Form className="search-form mt-3">
                 <InputGroup>
                     <InputGroup.Text className="input-icon">
                         <img src="/images/search-icon.png" alt="Search Icon" />
                     </InputGroup.Text>
                     <Form.Control type="text" placeholder="Rechercher" className="input-field" />
-                    <Button variant="dark" className="search-button">Rechercher</Button>
+                    <Button className="search-button">Rechercher</Button>
                 </InputGroup>
             </Form>
+
             <div className="welcome-message mt-4">
-                <img src="/images/head-rosecare.png" alt="Rose Icon" className="rose-icon" />
+                <img src="/images/rose-icon.png" alt="Rose Icon" className="rose-icon" />
                 <span>Bienvenue dans votre app <strong>RoseCare</strong></span>
             </div>
-            <Row className="quick-actions mt-4">
-                <Col xs={6} className="action-item">
-                    <Button className="custom-button">Auto-Examen</Button>
+
+            <Row className="quick-actions mt-4 gx-2 gy-2">
+                <Col xs={6} className="action-item auto-examen">
+                    <Button className="custom-button-home">Auto-Examen</Button>
                 </Col>
-                <Col xs={6} className="action-item">
-                    <Button className="custom-button">Guide</Button>
+                <Col xs={6} className="action-item guide">
+                    <Button className="custom-button-home">Guide</Button>
                 </Col>
-                <Col xs={6} className="action-item mt-3">
-                    <Button className="custom-button">Configurer les rappels</Button>
+                <Col xs={6} className="action-item rappels">
+                    <Button className="custom-button-home">Configurer les rappels</Button>
                 </Col>
-                <Col xs={6} className="action-item mt-3">
-                    <Button className="custom-button">Vos documents</Button>
+                <Col xs={6} className="action-item documents">
+                    <Button className="custom-button-home">Vos documents</Button>
                 </Col>
             </Row>
+
             <div className="bottom-navigation mt-5">
                 <Button className="nav-icon active">Accueil</Button>
                 <Button className="nav-icon">Planning</Button>

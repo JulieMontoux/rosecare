@@ -188,4 +188,3 @@ function Signup({ goToLogin, goToHome }) {
 export default Signup;
 
 // TODO : add incrémentation et retour a l'accueil
-// TODO : divise le numéro de téléphone 
