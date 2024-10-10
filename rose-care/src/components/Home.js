@@ -23,30 +23,36 @@ function Home() {
             </Form>
 
             <div className="welcome-message mt-4">
-                <img src="/images/rose-icon.png" alt="Rose Icon" className="rose-icon" />
-                <span>Bienvenue dans votre app <strong>RoseCare</strong></span>
-            </div>
+    <div className="bubble-avatar">
+        <img src="/images/rose-icon.png" alt="Rose Icon" className="rose-icon" />
+    </div>
+    <div className="bubble-text">
+        <span>Bienvenue dans votre app <strong>RoseCare</strong></span>
+    </div>
+</div>
+
 
             <Row className="quick-actions mt-4 gx-2 gy-2">
-                <Col xs={6} className="action-item auto-examen">
-                    <Button className="custom-button-home">Auto-Examen</Button>
-                </Col>
-                <Col xs={6} className="action-item guide">
-                    <Button className="custom-button-home">Guide</Button>
-                </Col>
-                <Col xs={6} className="action-item rappels">
-                    <Button className="custom-button-home">Configurer les rappels</Button>
-                </Col>
-                <Col xs={6} className="action-item documents">
-                    <Button className="custom-button-home">Vos documents</Button>
-                </Col>
-            </Row>
+    <Col xs={12} md={6} className="action-item auto-examen">
+        <a href="/auto-examen" className="custom-button-home">Auto-Examen</a>
+    </Col>
+    <Col xs={12} md={6} className="action-item guide">
+        <a href="/guide" className="custom-button-home">Guide</a>
+    </Col>
+    <Col xs={12} md={6} className="action-item rappels">
+        <a href="/rappels" className="custom-button-home">Configurer les rappels</a>
+    </Col>
+    <Col xs={12} md={6} className="action-item documents">
+        <a href="/documents" className="custom-button-home">Vos documents</a>
+    </Col>
+</Row>
+
 
             <div className="bottom-navigation mt-5">
-                <Button className="nav-icon active">Accueil</Button>
-                <Button className="nav-icon">Planning</Button>
-                <Button className="nav-icon">Forum</Button>
-                <Button className="nav-icon">Compte</Button>
+                <a href="/accueil" className="nav-icon active">Accueil</a>
+                <a href="/planning" className="nav-icon">Planning</a>
+                <a href="/forum" className="nav-icon">Forum</a>
+                <a href="/compte" className="nav-icon">Compte</a>
             </div>
         </Container>
     );

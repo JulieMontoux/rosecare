@@ -39,7 +39,7 @@
 }
 
 .search-button {
-    background-color: #514b4b;
+    background-color: #514b4b !important;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -47,29 +47,65 @@
 }
 
 .welcome-message {
-    background-color: #fabbcc;
-    border-radius: 10px;
-    padding: 8px 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 15px;
 }
 
-.rose-icon {
-    width: 25px;
-    height: 25px;
+.bubble-avatar {
+    flex-shrink: 0;
     margin-right: 10px;
+}
+
+.rose-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.bubble-text {
+    background-color: #fabbcc;
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    max-width: 80%;
+    color: #514b4b;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bubble-text::before {
+    content: "";
+    position: absolute;
+    top: 20px; /* Ajustez cette valeur pour aligner la pointe avec l'avatar */
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #fabbcc transparent transparent;
+}
+
+
+.quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
 }
 
 .quick-actions .action-item {
     background-size: cover;
     background-position: center;
     border-radius: 12px;
-    padding: 10px;
+    padding: 20px;
     overflow: hidden;
     height: 150px;
     position: relative;
+    flex: 0 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
 }
+
 
 .action-item::before {
     content: "";
@@ -81,4 +117,54 @@
     background-color: rgba(250, 187, 204, 0.7);
     z-index: 1;
 }
- 
+
+.custom-button-home {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    color: #514b4b;
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.action-item.auto-examen {
+    background-image: url('../../public/images/auto-examen-bg.png');
+}
+
+.action-item.guide {
+    background-image: url('../../public/images/guide-bg.png');
+}
+
+.action-item.rappels {
+    background-image: url('../../public/images/rappels-bg.png');
+}
+
+.action-item.documents {
+    background-image: url('../../public/images/documents-bg.png');
+}
+
+.bottom-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #514b4b !important;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.nav-icon {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-icon.active {
+    color: #fabbcc;
+}
