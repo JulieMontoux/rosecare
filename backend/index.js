@@ -13,13 +13,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const SECRET_KEY = process.env.SECRET_KEY || "default_secret_key";
 
-if (!process.env.SECRET_KEY) {
-  console.error(
-    "ERREUR : SECRET_KEY non définie. Assurez-vous de définir une clé secrète dans l'environnement."
-  );
-  process.exit(1);
-}
-
 app.use(bodyParser.json());
 
 // Configuration de la base de données SQLite
@@ -118,7 +111,7 @@ function generateToken(user) {
  *             properties:
  *               nom:
  *                 type: string
- *               prenoms:
+ *               prenom:
  *                 type: string
  *               email:
  *                 type: string
@@ -134,8 +127,8 @@ function generateToken(user) {
  *                 type: string
  *               code_postal:
  *                 type: string
- *              ville:
- *                  type: string
+ *               ville:
+ *                 type: string
  *     responses:
  *       201:
  *         description: Utilisateur créé avec succès
@@ -146,7 +139,7 @@ app.post("/register", async (req, res) => {
   try {
     const {
       nom,
-      prenoms,
+      prenom,
       email,
       mot_de_passe,
       date_naissance,
@@ -158,7 +151,7 @@ app.post("/register", async (req, res) => {
     } = req.body;
     if (
       !nom ||
-      !prenoms ||
+      !prenom ||
       !email ||
       !mot_de_passe ||
       !date_naissance ||
@@ -178,10 +171,10 @@ app.post("/register", async (req, res) => {
 
     // Insertion de l'utilisateur dans la base de données
     db.run(
-      `INSERT INTO Utilisateur (nom, prenoms, email, mot_de_passe, date_naissance, numero_securite_sociale, telephone, adresse, code_postal, ville) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      `INSERT INTO Utilisateur (nom, prenom, email, mot_de_passe, date_naissance, numero_securite_sociale, telephone, adresse, code_postal, ville) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         nom,
-        prenoms,
+        prenom,
         email,
         hashedPassword,
         date_naissance,

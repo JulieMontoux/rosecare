@@ -9,12 +9,12 @@ function Onboarding({ goToLogin }) {
         if (activeIndex < 2) {
             setActiveIndex(activeIndex + 1);
         } else {
-            goToLogin(); // Redirection vers la page de connexion si c'est la dernière slide
+            goToLogin(); 
         }
     };
 
     const handleSkip = () => {
-        goToLogin(); // Passe directement à la page de connexion
+        goToLogin();
     };
 
     return (

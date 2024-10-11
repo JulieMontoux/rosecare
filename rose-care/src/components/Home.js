@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Form, InputGroup, Button } from 'react-bootstrap';
 import '../styles/Home.css';
+import axios from 'axios';
 
 function Home() {
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        axios.get('http://localhost:3000/protected', {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        })
+        .then(response => {
+            console.log('Accès accordé', response.data);
+        })
+        .catch(error => {
+            console.error('Erreur:', error.response.data);
+        });
+    }, []); 
+
     return (
         <Container className="home-container">
             <div className="profile-section">
